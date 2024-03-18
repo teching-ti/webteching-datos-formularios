@@ -1,6 +1,8 @@
+version 1.0
 ///*** UNIR DATOS WEB TECHING ***///
 
-///- Se debe tener una carpeta hermana llamada documentos_generados
+///- Se debe crear el entorno virtual, deberá llamarse "env_unir_datos_web_teching", de ese modo no habría inconvenientes con el tema del github en caso se presente algo a futuro
+///- Se debe tener una carpeta hermana llamada "documentos_generados", ya que aquí es donde se guardarán los archivos resultantes
 
 ///- Datos generales
 El objetivo de este desarrollo es unir datos en un solo archivo excel.
