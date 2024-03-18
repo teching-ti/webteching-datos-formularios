@@ -1,0 +1,29 @@
+///*** UNIR DATOS WEB TECHING ***///
+
+///- Se debe tener una carpeta hermana llamada documentos_generados
+
+///- Datos generales
+El objetivo de este desarrollo es unir datos en un solo archivo excel.
+
+- Librerías y complementos:
+Estas librerías y complementos se encuentran en el archivo requirements.txt
+'Este comando se encargará de reconocer todas las librerías y complementos utilizados para este proyecto: (pip freeze > requirements.txt)'
+'Si se desea implementar este aplicativo se debe descargar todo el proyecto como tal (carpeta: UNIR_DATOS_WEB_TECHING)'
+'Luego instalar las librerías y complementos: (pip install -r requirements.txt)'
+
+///- Datos del aplicativo
+
+- Contexto:
+La web de teching cuenta con varios productos registrados, cada uno de estos productos posee una ficha técnica. Anteriormente era posible acceder a esta ficha técnica solo con presionar un botón. Ahora la única forma de obtener dicha ficha técnica es a través de un formulario, un usuario accede a este formulario en donde debe ingresar sus datos.
+Al completar dicho formulario, se enviará un correo a la dirección ingresada con la ficha técnica en formato PDF, y adicional a ello, teching obtiene cierta información del usuario interesado, de esta manera se puede trabajar esta información obtenida para hacer seguimiendo a posibles clientes.
+
+- Web de teching:
+Ingresamos al administrador de la web de teching, una vez allí debemos dirigirnos a 'Ninjaforms', seleccionar 'envíos' y luego 'exportación por lotes'; una vez aquí debemos debemos seleccionar las fechas entre las que deseamos obtener la lista de registros y los formularios de los que desamos obtener información.
+Y así vamos descargando archivos csv con esta información. (Se recomienda hacerlo de 6 en 6 como máximo).
+
+Ya con todos los archivos descargados procedemos a hacer uso del aplicativo.
+
+- Uso del aplicativo: (Solo es necesario correr una de las interfaces, por ejemplo 'py interfaz_f.py' o 'py interfaz.py' en la consola de comandos)
+El aplicativo consta de 3 archivos, dos de ellos son interfaces, se puede usar cualquiera de los dos. Su objetivo es mostrar información al usuario y ayudarlo a seleccionar los archivos descargados. (No se debe cambiar el nombre de estos archivos, deben usarse tal cual se han descargado). Una vez seleccionados los archivos se deberá hacer clic en el boton correspondiente para generar un resultado.
+
+El archivo proceso.py, ejecutará la lógica, reconocerá a los archivos seleccionados y los examinará haciendo comparación con un diccionario que debe ser actualizado en base a los productos registrados en la web de teching. Una vez seleccionados se hará clic en el botón generar, esto creará dentro de la carpeta 'documentos_generados' un solo archivo archivo excel con la información obtenida.
